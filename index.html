@@ -5,40 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
     <title>Edie homepage</title>
 </head>
 <body>
     <header>
-            <nav class="nav">
-            <div class="nav-logo">
-                <h2>Edie</h2>
+        <nav class="nav">
+          <div class="nav-logo">
+            <h2>Edie</h2>
+          </div>
+          <div class="nav-body">
+            <i class="fas fa-bars" id="menu"></i>
+            <div class="nav-body-items menu2">
+              <i class="fas fa-times" id="cancel"></i>
+              <ul>
+                <li class="nav-body-item"><a href="#home" class="active">Home</a></li>
+                <li class="nav-body-item"><a href="#services">Services</a></li>
+                <li class="nav-body-item"><a href="#ourworks">Our Works</a></li>
+                <li class="nav-body-item"><a href="#clients">Clients</a></li>
+                <li class="nav-body-item"><a href="#contact">Contact</a></li>
+    
+              </ul>
             </div>
-            <div class="nav-body">
-                <i class="fas fa-bars" id="menu"></i>
-                <div class="nav-body-items menu2">
-                <i class="fas fa-times" id="cancel"></i>
-                <ul>
-                    <li class="nav-body-item"><a href="#home" class="active">Home</a></li>
-                    <li class="nav-body-item"><a href="#services">Services</a></li>
-                    <li class="nav-body-item"><a href="#ourworks">Our Works</a></li>
-                    <li class="nav-body-item"><a href="#clients">Clients</a></li>
-                    <li class="nav-body-item"><a href="#contact">Contact</a></li>
-        
-                </ul>
-                </div>
-            </div>
-            </nav>
-    </header>
+          </div>
+        </nav>
+      </header>
         <main>
                 <section class="section__banner">
                     <div class="section__banner-title">
-                        <p>Unhappy with your website?</p>
-                        <h1>We create beautiful and fast web services</h1>
+                        <p class="sub-title">Unhappy with your website?</p>
+                        <h1 class="title">We create beautiful and fast web services</h1>
                     </div>
-                    <div class="banner-container">
-                        <img src="./img/heroImage.jpg" alt="Services_Photo">
-                    </div>
+                    
+                        <img class="img-banner" src="./img/heroImage.jpg" alt="Services_Photo">
+                    
                 </section>
                 <div class="contact__email">
                     <h2>Story, emotion and purpose</h2>
@@ -46,31 +48,31 @@
                     <div class="contact">
                         <span>Want us to contact you?</span>
                         <div class="container-input">
-                            <input type="email"> 
-                            <button class="button join">Join</button>
+                            <input placeholder="Email" type="email"> 
+                            <button type="submit" class="button join">Join</button>
                         </div>
                     </div>
                 </div>
                 <section class="section_cards">
-                    <h2>We offer high demand services  </h2>
+                    <h2>We offer high <br> demand services  </h2>
                     <div class="card">
-                        <i></i>
+                        <i class="fas fa-pen blue"></i>
                         <strong>UI/UX Design</strong>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-                        <button class="button">Get started</button>
+                        <button class="button-get">Get started</button>
 
                     </div>
                     <div class="card">
-                        <i></i>
+                        <i class="fas fa-code green"></i>
                         <strong>Front End</strong>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-                        <button class="button ">Get started</button>
+                        <button class="button-get ">Get started</button>
                     </div>
                     <div class="card">
-                        <i></i>
+                        <i class="fas fa-server red"></i>
                         <strong>Back End</strong>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-                        <button class="button ">Get started</button>
+                        <button class="button-get ">Get started</button>
                     </div>
                 </section>
                 <section class="section__desings">
@@ -131,15 +133,18 @@
                     <i></i>
                     <i></i>
                 </div>
-                <div class="contact">
-                    <span>Want us to contact you?</span>
-                    <div class="container-input">
-                        <input type="email"> 
-                        <button class="button join">Join</button>
+                <div class="contact__email">
+                    <div class="contact">
+                        <span>Want us to contact you?</span>
+                        <div class="container-input">
+                            <input type="email"> 
+                            <button class="button join">Join</button>
+                        </div>
                     </div>
                 </div>
                </div>
                <p>created by <a href="">Corzahk</a> - devChallenges.io</p>
             </footer>
+            <script src="/js/main.js"></script>
 </body>
 </html>
