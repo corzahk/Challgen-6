@@ -24,7 +24,9 @@
 body {
     font-family: var(--font-one);
     background-color: #FFFFFF;
-    height: 100vh;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 
 }
 
@@ -228,26 +230,35 @@ main {
     margin-bottom: 10vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
 
 
 }
 
-.section_cards h2 {
+.subtitle-h2 {
     font-size: 1.3rem;
     font-weight: 500;
     color: var(--gray-one);
     margin-bottom: 10vh;
     margin-left: 8vw;
+    margin-right: auto;
+    
 }
 
 .card {
-    width: 100%;
+    width: 300px;
+    height: 422px;
     display: grid;
-
+   margin-left: auto;
+   margin-right: auto;
     justify-content: center;
     margin-bottom: 3vh;
+    
 }
+/* section {
+    width: 100%;
+} */
 
 .card i {
     margin-top: 5vh;
@@ -260,6 +271,7 @@ main {
     width: 60px;
     margin-bottom: 5vh;
     font-size: 20px;
+    margin-left: 5vw;
 }
 
 .blue {
@@ -280,7 +292,7 @@ main {
     color: var(--gray-one);
     display: block;
     margin-bottom: 5vh;
-
+    margin-left: 5vw;
 }
 
 .card p {
@@ -288,7 +300,8 @@ main {
     font-weight: 400;
     color: var(--gray-two);
     margin-bottom: 3vh;
-    width: 65vw;
+    margin-left: 5vw;
+    margin-right: 3vw;
 }
 
 .button-get {
@@ -303,6 +316,7 @@ main {
     background-color: #E0E0E0;
     font-family: var(--font-one);
     margin-bottom: 8vh;
+    margin-left: 5vw;
 }
 
 .button-get:hover {
@@ -314,4 +328,124 @@ main {
     border-radius: 12px;
     box-shadow: 0px 10px 30px rgb(12 11 11 / 44%);
     cursor: pointer;
+}
+.container-desing{
+    width: 300px;
+    height: 380px;
+   margin: 0 auto;
+}
+.container-desing img{
+    width: 100%;
+    border-radius: 12px;
+}
+.container-desing span{
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--gray-three);
+}
+.container-desing p {
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: var(--gray-one);
+}
+.see-more {
+    color: var(--color-blue);
+    font-size: 1.12rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 2vh;
+}
+.section__desings{
+    margin-bottom: 10vh;
+}
+.meet-team {
+    width: 280px;
+    margin-bottom: 5vh;
+}
+.meet-team span{
+    font-size: 1.12rem;
+    font-weight: 500px;
+    color: #EB5757;
+}
+.meet-team h2 {
+   font-size: 2.25rem;
+   font-weight: 500;
+   color: var(--gray-one);
+}
+.meet-team p {
+    font-size: 1rem;
+    font-style: 400;
+    color: var(--gray-two);
+}
+.famele{
+grid-row-start: 1;
+grid-row-end: 3;
+width: 150.16px;
+height: 150.16px;
+
+}
+.men-one{
+    width: 120px;
+    height: 120px;
+}
+.men-two{
+    width: 140px;
+    height: 140px;
+}
+.photos-team{
+    display: grid;
+    grid-template-columns: repeat(2,150px);
+    grid-gap: 0.5rem;
+    align-items: center;
+    width: 310px;
+    margin: 0 auto;
+}
+.photos-team img{
+    width: 100%;
+    border-radius: 12px;
+}
+.section__team{
+    margin-bottom: 10vh;
+}
+
+.clients h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gray-one);
+    margin-bottom: 3vh;
+}
+.clients {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 8vh;
+}
+.client-img {
+    width: 82px;
+    height: 82px;
+}
+.client-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+.container-client {
+    width: 310px;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+
+}
+.puesto{
+    font-size: 1.2rem;
+    color: var(--gray-three);
+    font-size: 500;
+}
+.container-client .name{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+footer {
+    background-color: #100E1D;
+    color: #FFFFFF;
+    font-size: 1rem;
 }
