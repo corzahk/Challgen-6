@@ -467,3 +467,40 @@ li {
 .corza {
   text-align: center;
 }
+
+@media screen and (min-width: 900px) {
+  ul li.active a {
+    font-weight: 700;
+    border-bottom: 3px solid rgb(46, 34, 34);
+  }
+
+  .nav-body-items {
+    background: none;
+  }
+  .nav-body {
+    width: 65%;
+  }
+  .nav-body-item a {
+    color: #264653;
+  }
+  .nav-body-items {
+    transform: translate(0);
+    background-color: none;
+    position: relative;
+    width: 100%;
+    height: initial;
+    transition: none;
+  }
+  .nav-body-items ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-body-item {
+    font-size: 18px;
+  }
+  #menu,
+  #cancel {
+    display: none;
+  }
+}
