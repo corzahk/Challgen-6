@@ -147,7 +147,7 @@ main {
 
 .img-banner {
   width: 100%;
-  height: 145px;
+
   margin: 0 auto;
   object-fit: cover;
   border-radius: 18px;
@@ -233,14 +233,14 @@ main {
 
 .card {
   width: 300px;
-  height: 422px;
+
   display: grid;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   margin-bottom: 3vh;
 }
-section {
+.section__container {
   display: grid;
   justify-items: center;
 }
@@ -315,8 +315,6 @@ section {
   cursor: pointer;
 }
 .container-desing {
-  width: 300px;
-  height: 380px;
   margin: 0 auto;
 }
 .container-desing img {
@@ -339,17 +337,20 @@ section {
   font-weight: 500;
   text-decoration: none;
   margin-bottom: 2vh;
+  justify-self: flex-start;
 }
 .section__desings {
-  margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  grid-column-gap: 1.111111rem;
 }
 .meet-team {
-  width: 280px;
   margin-bottom: 5vh;
 }
 .meet-team span {
   font-size: 1.12rem;
-  font-weight: 500px;
+  font-weight: 500;
   color: #eb5757;
 }
 .meet-team h2 {
@@ -359,7 +360,7 @@ section {
 }
 .meet-team p {
   font-size: 1rem;
-  font-style: 400;
+  font-weight: 400;
   color: var(--gray-two);
 }
 .famele {
@@ -381,7 +382,7 @@ section {
   grid-template-columns: repeat(2, 150px);
   grid-gap: 0.5rem;
   align-items: center;
-  width: 310px;
+
   margin: 0 auto;
 }
 .photos-team img {
@@ -390,6 +391,9 @@ section {
 }
 .section__team {
   margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .clients h3 {
@@ -415,7 +419,6 @@ section {
   width: 310px;
   display: flex;
   justify-content: space-around;
-  height: 75px;
 }
 .puesto {
   font-size: 1.2rem;
@@ -428,6 +431,7 @@ section {
   margin-bottom: 2vh;
 }
 footer {
+  width: 100%;
   background-color: #100e1d;
   color: #ffffff;
   font-size: 1rem;
@@ -440,9 +444,11 @@ footer {
 li {
   list-style: none;
 }
-.menu li {
+.menu li a {
   font-size: 0.9rem;
   margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
 }
 .red-social {
   margin-left: 5vw;
@@ -464,10 +470,61 @@ li {
   align-self: center;
   margin-right: 5px;
 }
+.clients h3 {
+  width: 84.41%;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
 .corza {
   text-align: center;
 }
-
+@media screen and (min-width: 680px) {
+  .section__desings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+  }
+  .item_desings:nth-child(2n + 1) {
+    margin-top: 28.25%;
+  }
+  .meet-team {
+    width: 300px;
+  }
+  .margin-botom {
+    justify-self: flex-start;
+    margin-left: 10%;
+  }
+  .container-client {
+    justify-self: flex-start;
+    margin-left: 5vw;
+  }
+  .clients {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .container-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .foo {
+    margin: 5vh 0 0 0;
+  }
+  .red-social {
+    margin-top: 5vh;
+  }
+  .top {
+    justify-self: flex-start;
+    margin-left: 15vw;
+  }
+  .section__container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .section__banner-title {
+    margin-left: 10%;
+  }
+}
 @media screen and (min-width: 900px) {
   ul li.active a {
     font-weight: 700;
@@ -502,5 +559,28 @@ li {
   #menu,
   #cancel {
     display: none;
+  }
+  .section__team {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10vh;
+  }
+
+  .photos-team {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .section_cards {
+    flex-direction: row;
+  }
+  .see-more {
+    justify-self: flex-end;
+    margin-bottom: 10vh;
+  }
+  .subtitle-h2 {
+    font-size: 1.6rem;
+  }
+  .title {
+    font-size: 1.6rem;
   }
 }
